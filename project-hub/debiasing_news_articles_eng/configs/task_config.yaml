@@ -53,8 +53,8 @@
     "annotation_schemes": [
         {
             "annotation_type": "radio",
-            "name": "bws_best",
-            "description": "Is this news article biassed?",
+            "name": "bias_class",
+            "description": "1. Is this news article biased?",
 
             # If true, display the labels horizontally
             "horizontal": True,
@@ -68,8 +68,8 @@
 
               {
           "annotation_type": "multiselect",
-          "name": "Bias_Topics",
-          "description": "If you select 'biassed', choose the bias topics seen within the text",
+          "name": "bias_topics",
+          "description": "2. If you select 'biased', choose the bias topics seen within the text",
           "labels": [
 
               {
@@ -100,39 +100,53 @@
 
 
         {
+            "annotation_type": "text",
+            "name": "bias_topics_other",
+            "description": "3. If you choose 'Other' from the question 1., write down its label here",
+            # if you want to use multi-line textbox, turn on the text area and set the desired rows and cols of the textbox
+            "textarea": {
+              "on": True,
+              "rows": 2,
+              "cols": 70
+            },
+            "allow_paste": False
+        } ,
+
+
+        {
             "annotation_type": "highlight",
-            "name": "bias_types",
-            "description": "If you select 'biassed', highlight phrases make the sentence biased with the below bias types markers where F is Framing, E is Epistemological and D is Demographic bias type",
+            "name": "bias_types_markers",
+            "displaying_score": False,
+            "description": "4. If you select 'biased', highlight phrases make the sentence biased with the below bias types markers where F is Framing, E is Epistemological and D is Demographic bias type.",
             "labels": [
                 {
-                  "name": "F-Word choice (nouns or phases)",
+                  "name": "F1-Word choice",
                 },
                 {
-                  "name": "F-Labelling (adverbs or adjectives)",
+                  "name": "F2-Labelling",
                 },
                 {
-                  "name": "F-Other",
-                },
-
-                {
-                    "name": "E-Misleading use of factive verbs",
+                  "name": "F3-Other",
                 },
 
                 {
-                    "name": "E-Other",
+                    "name": "E1-Misleading use of factive verbs"
                 },
 
                 {
-                    "name":"D-Stereotyping roles/attributes",
+                    "name": "E2-Other",
+                },
+
+                {
+                    "name":"D1-Stereotyping roles/attributes",
                 },
                 {
-                    "name": "D-Use of feminine & masculine reference words",
+                    "name": "D2-Feminine/masculine reference words",
                  },
                 {
-                  "name": "D-Other",
+                  "name": "D3-Other",
                 }
             ],
-
             # If true, numbers [1-len(labels)] will be bound to each
             # label. Highlight selection annotations with more than 10 are not supported
             # with this simple keybinding and will need to use the full item
@@ -140,11 +154,24 @@
             "sequential_key_binding": True,
         },
 
+        {
+            "annotation_type": "text",
+            "name": "bias_markers_other",
+            "description": "5. If you choose the markers from Question 3.: D3-Other, E2-Other, F3-Other, write down their labels",
+            # if you want to use multi-line textbox, turn on the text area and set the desired rows and cols of the textbox
+            "textarea": {
+              "on": True,
+              "rows": 2,
+              "cols": 70
+            },
+            "allow_paste": False
+        } ,
+
 
         {
             "annotation_type": "text",
-            "name": "textbox_input",
-            "description": "If you select 'biassed', rewrite the unbiased version. Your revisions should (1) not change factual information, (2) preserve context, (3) maintain the author's writing style, (4) omit unnecessary changes.",
+            "name": "unbiased_text",
+            "description": "6. If you select 'biased', rewrite the unbiased version. Your revisions should (1) not change factual information, (2) preserve context and meaning (3) omit unnecessary changes. ",
             # if you want to use multi-line textbox, turn on the text area and set the desired rows and cols of the textbox
             "textarea": {
               "on": True,
