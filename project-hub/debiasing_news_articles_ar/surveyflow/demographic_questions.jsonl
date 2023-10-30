@@ -1,0 +1,8 @@
+{"id":"1","text":"Name","schema": "text","label_requirement": {"required":true}}
+{"id":"2","text":"E-Mail","schema": "text","label_requirement": {"required":true}}
+{"id":"3","text":"Country","schema": "text","label_requirement": {"required":true}}
+{"id":"4","text":"What is your gender?","schema": "radio", "choices": ["Woman", "Man", "Non-binary","Prefer not to disclose", "Prefer to self-describe (please specify)"], "has_free_response": {"instruction": ""},"label_requirement": {"required":true}}
+{"id":"5","text":"How do you describe your race or ethnicity (You may select more than one option)","schema": "multiselect", "choices": ["White", "Black or African American", "Hispanic or Latino","American India or Alaska Native", "Asian", "Native Hawaiian or Pacific Islander","Prefer not to disclose", "Prefer to self-describe (please specify)"], "has_free_response": {"instruction": ""},"label_requirement": {"required":true}}
+{"id":"6","text":"What is your age?","schema": "radio", "choices": ["18-29","30-39","40-49",">50","Prefer not to disclose"],"label_requirement": {"required":true}}
+{"id":"7","text":"How many years of experience do you have in editoring?","schema": "text","label_requirement": {"required":true}}
+{"id":"8","text":"Please feel free to leave any comments about our study (optional)","schema": "text"}
