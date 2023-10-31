@@ -102,7 +102,7 @@
         {
             "annotation_type": "text",
             "name": "bias_topics_other",
-            "description": "3. If you choose 'Other' from Question 2, write down a label here",
+            "description": "3. If you choose 'Other' from Question 2, write down a label here.",
             # if you want to use multi-line textbox, turn on the text area and set the desired rows and cols of the textbox
             "textarea": {
               "on": True,
@@ -117,7 +117,7 @@
             "annotation_type": "highlight",
             "name": "bias_types_markers",
             "displaying_score": False,
-            "description": "4. If you think the sentence is 'biased', highlight words and phrases that make it so. You can select multiple bias types. Please select F for parts that have \"Framing bias\" E for \"Epistemological bias\" and D for \"Demographic bias.\"",
+            "description": "4. If you think the sentence is 'biased', highlight words and phrases that make it so. You can select multiple bias types. Please select F for parts that have \"Framing bias\", E for \"Epistemological bias\" and D for \"Demographic bias\".",
             "labels": [
                 {
                   "name": "F1- Word choice (i.e. nouns or phases)",
