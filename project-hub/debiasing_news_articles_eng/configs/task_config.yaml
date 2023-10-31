@@ -69,7 +69,7 @@
               {
           "annotation_type": "multiselect",
           "name": "bias_topics",
-          "description": "2. If you select 'biased', choose the bias topics seen within the text",
+          "description": "2. If you select 'biased', choose the bias topics seen within the text.",
           "labels": [
 
               {
@@ -102,11 +102,11 @@
         {
             "annotation_type": "text",
             "name": "bias_topics_other",
-            "description": "3. If you choose 'Other' from the question 1., write down its label here",
+            "description": "3. If you choose 'Other' from Question 2, write down a label here",
             # if you want to use multi-line textbox, turn on the text area and set the desired rows and cols of the textbox
             "textarea": {
               "on": True,
-              "rows": 2,
+              "rows": 1,
               "cols": 70
             },
             "allow_paste": False
@@ -117,34 +117,34 @@
             "annotation_type": "highlight",
             "name": "bias_types_markers",
             "displaying_score": False,
-            "description": "4. If you select 'biased', highlight phrases make the sentence biased with the below bias types markers where F is Framing, E is Epistemological and D is Demographic bias type.",
+            "description": "4. If you think the sentence is 'biased', highlight words and phrases that make it so. You can select multiple bias types. Please select F for parts that have \"Framing bias\" E for \"Epistemological bias\" and D for \"Demographic bias.\"",
             "labels": [
                 {
                   "name": "F1- Word choice (i.e. nouns or phases)",
                 },
                 {
-                  "name": "F2- Labelling (adverbs or adjectives)",
+                  "name": "F2- Labelling (i.e. adverbs or adjectives)",
                 },
                 {
-                  "name": "F3-Other",
-                },
-
-                {
-                    "name": "E1-Misleading use of factive verbs"
+                  "name": "F3- Other",
                 },
 
                 {
-                    "name": "E2-Other",
+                    "name": "E1- Misleading use of factive verbs"
                 },
 
                 {
-                    "name":"D1-Stereotyping roles/attributes (i.e. presuppositions about particular genders, races, or other demographic categories ",
+                    "name": "E2- Other",
+                },
+
+                {
+                    "name":"D1- Stereotyping roles/attributes (i.e. presuppositions about particular genders, races, or other demographic categories ",
                 },
                 {
-                    "name": "D2-Use of both feminine and masculine reference words (i.e.gender-specific nouns when making generic references)",
+                    "name": "D2- Use of both feminine and masculine reference words (i.e.gender-specific nouns when making generic references)",
                  },
                 {
-                  "name": "D3-Other",
+                  "name": "D3- Other",
                 }
             ],
             # If true, numbers [1-len(labels)] will be bound to each
@@ -157,11 +157,11 @@
         {
             "annotation_type": "text",
             "name": "bias_markers_other",
-            "description": "5. If you choose the markers from Question 3.: D3-Other, E2-Other, F3-Other, write down their labels",
+            "description": "5. If you choose \"D3- Other\", \"E2- Other\", \"F3- Other\" at Question 4, please write their labels down.",
             # if you want to use multi-line textbox, turn on the text area and set the desired rows and cols of the textbox
             "textarea": {
               "on": True,
-              "rows": 2,
+              "rows": 1,
               "cols": 70
             },
             "allow_paste": False
@@ -171,7 +171,7 @@
         {
             "annotation_type": "text",
             "name": "unbiased_text",
-            "description": "6. If you select 'biased', rewrite the unbiased version. Your revisions should (1) not change factual information, (2) preserve context and meaning (3) omit unnecessary changes. ",
+            "description": "6. If you think the sentence is 'biased', please rewrite the unbiased version. Your revision should (1) not change factual information, (2) preserve context and meaning, and (3) omit unnecessary changes.",
             # if you want to use multi-line textbox, turn on the text area and set the desired rows and cols of the textbox
             "textarea": {
               "on": True,

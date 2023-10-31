@@ -5,4 +5,4 @@
 {"id":"5","text":"What is your age?","schema": "radio", "choices": ["18-29","30-39","40-49",">50","Prefer not to disclose"],"label_requirement": {"required":true}}
 {"id": "6", "text": "Please specify your native language(s). You may list multiple languages if applicable.", "schema": "text"}
 {"id":"7","text":"How many years of editorial experience do you have?","schema": "text","label_requirement": {"required":true}}
-{"id":"8","text":"Please feel free to leave any comments about our study (optional)","schema": "text"}
+{"id":"8","text":"Please feel free to leave any comments about our study (optional).","schema": "text"}
