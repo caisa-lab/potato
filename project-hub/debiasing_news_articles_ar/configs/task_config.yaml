@@ -1,5 +1,5 @@
 {
-    "port": 9001,
+    "port": 9002,
 
     "server_name": "potato annotator",
 
@@ -23,7 +23,8 @@
     "annotation_codebook_url": "https://docs.google.com/document/d/1OoJ3Ew_ga2GfXbG6WqQidaFMGvCL4Sm8pPQ4UJ4JgIY/edit?usp=sharing",
 
     "data_files": [
-       "data/babe_dataset.tsv"
+       "data/Daraj_articles_v1.tsv",
+       "data/train_ar.tsv"
     ],
 
     "item_properties": {
@@ -54,7 +55,7 @@
         {
             "annotation_type": "radio",
             "name": "bias_class",
-            "description": "Is this news article biased?",
+            "description": "1. Is this news article biased?",
 
             # If true, display the labels horizontally
             "horizontal": True,
@@ -69,7 +70,7 @@
               {
           "annotation_type": "multiselect",
           "name": "bias_topics",
-          "description": "1. If you select 'biased', choose the bias topics seen within the text",
+          "description": "2. If you select 'biased', choose the bias topics seen within the text.",
           "labels": [
 
               {
@@ -102,11 +103,11 @@
         {
             "annotation_type": "text",
             "name": "bias_topics_other",
-            "description": "2. If you choose 'Other' from the question 1., write down its label here",
+            "description": "3. If you choose 'Other' from Question 2, write down a label here",
             # if you want to use multi-line textbox, turn on the text area and set the desired rows and cols of the textbox
             "textarea": {
               "on": True,
-              "rows": 2,
+              "rows": 1,
               "cols": 70
             },
             "allow_paste": False
@@ -117,34 +118,34 @@
             "annotation_type": "highlight",
             "name": "bias_types_markers",
             "displaying_score": False,
-            "description": "3. If you select 'biased', highlight phrases make the sentence biased with the below bias types markers where F is Framing, E is Epistemological and D is Demographic bias type.",
+            "description": "4. If you think the sentence is 'biased', highlight words and phrases that make it so. You can select multiple bias types. Please select F for parts that have \"Framing bias\" E for \"Epistemological bias\" and D for \"Demographic bias.\"",
             "labels": [
                 {
-                  "name": "F1-Word choice",
+                  "name": "F1- Word choice (i.e. nouns or phases)",
                 },
                 {
-                  "name": "F2-Labelling",
+                  "name": "F2- Labelling (i.e. adverbs or adjectives)",
                 },
                 {
-                  "name": "F3-Other",
-                },
-
-                {
-                    "name": "E1-Misleading use of factive verbs"
+                  "name": "F3- Other",
                 },
 
                 {
-                    "name": "E2-Other",
+                    "name": "E1- Misleading use of factive verbs"
                 },
 
                 {
-                    "name":"D1-Stereotyping roles/attributes",
+                    "name": "E2- Other",
+                },
+
+                {
+                    "name":"D1- Stereotyping roles/attributes (i.e. presuppositions about particular genders, races, or other demographic categories ",
                 },
                 {
-                    "name": "D2-Feminine/masculine reference words",
+                    "name": "D2- Use of both feminine and masculine reference words (i.e.gender-specific nouns when making generic references)",
                  },
                 {
-                  "name": "D3-Other",
+                  "name": "D3- Other",
                 }
             ],
             # If true, numbers [1-len(labels)] will be bound to each
@@ -157,11 +158,11 @@
         {
             "annotation_type": "text",
             "name": "bias_markers_other",
-            "description": "4. If you choose the markers from Question 3.: D3-Other, E2-Other, F3-Other, write down their labels",
+            "description": "5. If you choose \"D3- Other\", \"E2- Other\", \"F3- Other\" at Question 4, please write their labels down.",
             # if you want to use multi-line textbox, turn on the text area and set the desired rows and cols of the textbox
             "textarea": {
               "on": True,
-              "rows": 2,
+              "rows": 1,
               "cols": 70
             },
             "allow_paste": False
@@ -171,7 +172,7 @@
         {
             "annotation_type": "text",
             "name": "unbiased_text",
-            "description": "5. If you select 'biased', rewrite the unbiased version. Your revisions should (1) not change factual information, (2) preserve context and meaning (3) omit unnecessary changes. ",
+            "description": "6. If you think the sentence is 'biased', please rewrite the unbiased version. Your revision should (1) not change factual information, (2) preserve context and meaning, and (3) omit unnecessary changes.",
             # if you want to use multi-line textbox, turn on the text area and set the desired rows and cols of the textbox
             "textarea": {
               "on": True,
@@ -231,5 +232,14 @@
     "login": {
     "type": 'url_direct',    #can be 'password' or 'url_direct'
     "url_argument": 'PROLIFIC_PID' # when the login type is set to 'url_direct', 'url_argument' must be setup for a direct url argument login
+    },
+
+    "automatic_assignment": {
+      "on": true, # set false to turn off automatic assignment
+      "output_filename": "task_assignment.json", # saving path of the task assignment status
+      "sampling_strategy:": "random", # currently we only support random assignment
+      "labels_per_instance": 3, # number of labels for each instance
+      "instance_per_annotator": 2000, # number of instances assigned for each annotator
+      "users": [ ]
     },
 }
