@@ -232,13 +232,4 @@
     "type": 'url_direct',    #can be 'password' or 'url_direct'
     "url_argument": 'PROLIFIC_PID' # when the login type is set to 'url_direct', 'url_argument' must be setup for a direct url argument login
     },
-
-    "automatic_assignment": {
-      "on": true, # set false to turn off automatic assignment
-      "output_filename": "task_assignment.json", # saving path of the task assignment status
-      "sampling_strategy:": "random", # currently we only support random assignment
-      "labels_per_instance": 3, # number of labels for each instance
-      "instance_per_annotator": 2000, # number of instances assigned for each annotator
-      "users": [ ]
-    },
 }
