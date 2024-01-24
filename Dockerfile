@@ -2,7 +2,6 @@ FROM python:3.11-slim-bookworm
 
 WORKDIR /app
 
-COPY ./project-hub /app/project-hub
 COPY ./potato /app/potato
 COPY ./requirements.txt /app/requirements.txt
 
