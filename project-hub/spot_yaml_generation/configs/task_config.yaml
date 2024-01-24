@@ -1,0 +1,118 @@
+{
+    "port": 9000,
+
+    "server_name": "potato annotator",
+
+    "annotation_task_name": "Spot YAML Generation",
+
+    # Potato will write the annotation file for all annotations to this
+    # directory, as well as per-annotator output files and state information
+    # necessary to restart annotation.
+    "output_annotation_dir": "annotation_output",
+
+    # The output format for the all-annotator data. Allowed formats are:
+    # * jsonl
+    # * json (same output as jsonl)
+    # * csv
+    # * tsv
+    #
+    "output_annotation_format": "csv",
+
+    # If annotators are using a codebook, this will be linked at the top to the
+    # instance for easy access
+#    "annotation_codebook_url": "https://docs.google.com/document/d/1OoJ3Ew_ga2GfXbG6WqQidaFMGvCL4Sm8pPQ4UJ4JgIY/edit?usp=sharing",
+
+    "data_files": [
+          "data/data.csv"
+    ],
+
+    "item_properties": {
+        "id_key": "id",
+        "text_key": "sentence",
+        "context_key": "context"
+    },
+
+
+    "user_config": {
+
+      "allow_all_users": True,
+
+      "users": [],
+    },
+
+    # #defining the ways annotators entering the annotation system
+    # "login": {
+    #    "type": 'password',    #can be 'password' or 'url_direct'
+    #    "url_argument": '' # when the login type is set to 'url_direct', 'url_argument' must be setup for a direct url argument login
+    # },
+
+    # How many seconds do you want the annotators spend on each instance, after
+    # that, an alert will be sent per alert_time_each_instance seconds.
+    "alert_time_each_instance": 10000000,
+
+    "annotation_schemes": [
+        {
+            "annotation_type": "text",
+            "name": "output",
+            "description": "Rewrite the sentence in a YAML output",
+            # if you want to use multi-line textbox, turn on the text area and set the desired rows and cols of the textbox
+            "textarea": {
+              "on": True,
+              "rows": 40,
+              "cols": 70
+            },
+            "allow_paste": True
+        } ,
+    ],
+
+    # define the surveyflow of the system, set up the pages before and after the data annotation page
+#    "surveyflow": {
+#      "on": True,
+#      #"order" : ['pre_annotation', 'prestudy_passed', 'prestudy_failed', 'post_annotation'],
+#      "order" : ['pre_annotation', 'post_annotation'],
+#      "pre_annotation": ['surveyflow/instruction.jsonl', 'surveyflow/consent.jsonl','surveyflow/demographic_questions.jsonl','surveyflow/intro.jsonl'],
+#      "post_annotation": ['surveyflow/end.jsonl'],
+#      # If set, we will automatically generate testing questions similar to the annotation instances, but explicitly ask the annotator to choose one option
+#      # "testing": ['surveyflow/testing.jsonl'],
+#    },
+
+    # #prestudy test, annotators who fail this test will be disalloed to continue annotation
+    # "prestudy": {
+    #     "on": False,
+    #     "minimum_score": 0.8,
+    #     "groundtruth_key": 'whether_match',
+    #     "question_key": 'Whether the presented sentences are discussing the same scientific finding',
+    #     "answer_mapping": {'Yes': True, 'No': False},
+    #     "pass_page": 'surveyflow/prestudy_pass.jsonl',
+    #     "fail_page": 'surveyflow/prestudy_fail.jsonl'
+    # },
+
+
+    # The html that changes the visualiztation for your task. Change this file
+    # to influence the layout and description of your task. This is not a full
+    # HTML page, just the piece that does lays out your task's pieces
+    # you may use templates in our lib, if you want to use your own template,
+    # please replace the string as a path to the template
+    "html_layout": "templates/layout.html",
+
+    # The core UI files for Potato. You should not need to change these normally.
+    #
+    # Exceptions to this might include:
+    # 1) You want to add custom CSS/fonts to style your task
+    # 2) Your layout requires additional JS/assets to render
+    # 3) You want to support additional keybinding magic
+    #
+    # if you want to use your own template,
+    # please replace the string as a path to the template
+    "base_html_template": "default",
+    "header_file": "default",
+
+    # This is where the actual HTML files will be generated
+    "site_dir": "default",
+
+    #defining the ways annotators entering the annotation system
+    "login": {
+    "type": 'url_direct',    #can be 'password' or 'url_direct'
+    "url_argument": 'UID' # when the login type is set to 'url_direct', 'url_argument' must be setup for a direct url argument login
+    },
+}
