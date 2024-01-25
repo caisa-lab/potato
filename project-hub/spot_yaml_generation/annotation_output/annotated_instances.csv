@@ -1,0 +1,1428 @@
+user,instance_id,displayed_text,output:::text_box
+1,1,Locate every school within 500m of a hospital in Seattle.,as
+1,2,Identify all gas stations less than 1km from a police station in Paris.,qwee
+3,65,Search for all murals no more than 500m from an art museum in Berlin.,"area:
+  - type: ""area""
+  - value: ""Berlin""
+nodes:
+  - id: 1
+    name: ""mural""
+  - id: 2
+    name: ""art museum""
+edges:
+  - id: 1
+    source: 1
+    target: 2
+    type: ""dist""
+    value: ""500m"""
+3,37,Track all art supply stores less than 650m from an art school in Florence.,"area:
+  - type: ""area""
+  - value: ""Florence""
+nodes:
+  - id: 1
+    name: ""art supply store""
+  - id: 2
+    name: ""art school""
+edges:
+  - id: 1
+    source: 1
+    target: 2
+    type: ""dist""
+    value: ""650m"""
+3,67,Pinpoint every craft workshop less than 700m from an arts center in Santa Fe.,"area:
+  - type: ""area""
+  - value: ""Santa Fe""
+nodes:
+  - id: 1
+    name: ""craft workshop""
+  - id: 2
+    name: ""arts center""
+edges:
+  - id: 1
+    source: 1
+    target: 2
+    type: ""dist""
+    value: ""700m"""
+3,40,Pinpoint every craft store less than 300m from a gallery in Santa Fe.,"area:
+  - type: ""area""
+  - value: ""Santa Fe""
+nodes:
+  - id: 1
+    name: ""craft store""
+  - id: 2
+    name: ""gallery""
+edges:
+  - id: 1
+    source: 1
+    target: 2
+    type: ""dist""
+    value: ""300m"""
+3,39,Identify all antique shops within 400m of a historic house in Charleston.,"area:
+  - type: ""area""
+  - value: ""Charleston""
+nodes:
+  - id: 1
+    name: ""antique shop""
+  - id: 2
+    name: ""historic house""
+edges:
+  - id: 1
+    source: 1
+    target: 2
+    type: ""dist""
+    value: ""400m"""
+3,7,Reveal all pharmacies less than 2km from an airport in Dubai.,"area:
+  - type: ""area""
+  - value: ""Dubai""
+nodes:
+  - id: 1
+    name: ""pharmacies""
+  - id: 2
+    name: ""airport""
+edges:
+  - id: 1
+    source: 1
+    target: 2
+    type: ""dist""
+    value: ""2km"""
+3,78,Map out street food markets within 700m of a university in Bangkok.,"area:
+  - type: ""area""
+  - value: ""Bangkok""
+nodes:
+  - id: 1
+    name: ""street food market""
+  - id: 2
+    name: ""university""
+edges:
+  - id: 1
+    source: 1
+    target: 2
+    type: ""dist""
+    value: ""700m"""
+3,8,Find public toilets within 100m of a courthouse in Sydney.,"area:
+  - type: ""area""
+  - value: ""Sydney""
+nodes:
+  - id: 1
+    name: ""public toilets""
+  - id: 2
+    name: ""courthouse""
+edges:
+  - id: 1
+    source: 1
+    target: 2
+    type: ""dist""
+    value: ""100m"""
+3,4,Map out supermarkets within a 400m radius of a train station in Tokyo.,"area:
+  - type: ""area""
+  - value: ""Tokyo""
+nodes:
+  - id: 1
+    name: ""supermarkets""
+  - id: 2
+    name: ""train station""
+edges:
+  - id: 1
+    source: 1
+    target: 2
+    type: ""dist""
+    value: ""400m"""
+3,71,Locate all organic grocers within 750m of a health clinic in San Francisco.,"area:
+  - type: ""area""
+  - value: ""San Francisco""
+nodes:
+  - id: 1
+    name: ""organic grocer""
+    filters:
+      key: ""organic""
+      operator: ""=""
+      value: ""yes""
+  - id: 2
+    name: ""health clinic""
+edges:
+  - id: 1
+    source: 1
+    target: 2
+    type: ""dist""
+    value: ""750m"""
+3,10,Locate bus stops within 350m of a shopping mall in Berlin.,"area:
+  - type: ""area""
+  - value: ""Berlin""
+nodes:
+  - id: 1
+    name: ""bus stop""
+  - id: 2
+    name: ""shopping mall""
+edges:
+  - id: 1
+    source: 1
+    target: 2
+    type: ""dist""
+    value: ""350m"""
+3,27,Reveal all yoga studios less than 200m from a park in Copenhagen.,"area:
+  - type: ""area""
+  - value: ""Copenhagen""
+nodes:
+  - id: 1
+    name: ""yoga studio""
+  - id: 2
+    name: ""park""
+edges:
+  - id: 1
+    source: 1
+    target: 2
+    type: ""dist""
+    value: ""200m"""
+3,15,Find all art galleries less than 500m away from a church in Rome.,"area:
+  - type: ""area""
+  - value: ""Rome""
+nodes:
+  - id: 1
+    name: ""art gallery""
+  - id: 2
+    name: ""church""
+edges:
+  - id: 1
+    source: 1
+    target: 2
+    type: ""dist""
+    value: ""500m"""
+3,21,Identify every bar within 400m of a theater in Madrid.,"area:
+  - type: ""area""
+  - value: ""Madrid""
+nodes:
+  - id: 1
+    name: ""bar""
+  - id: 2
+    name: ""theater""
+edges:
+  - id: 1
+    source: 1
+    target: 2
+    type: ""dist""
+    value: ""400m""
+"
+3,62,Locate all cafés within 600m of a yoga studio in Bali.,"area:
+  - type: ""area""
+  - value: ""Bali""
+nodes:
+  - id: 1
+    name: ""cafe""
+  - id: 2
+    name: ""yoga studio""
+edges:
+  - id: 1
+    source: 1
+    target: 2
+    type: ""dist""
+    value: ""600m"""
+3,36,Reveal every ice cream parlor within 200m of a playground in Santa Monica.,"area:
+  - type: ""area""
+  - value: ""Santa Monica""
+nodes:
+  - id: 1
+    name: ""ice cream parlor""
+  - id: 2
+    name: ""playground""
+edges:
+  - id: 1
+    source: 1
+    target: 2
+    type: ""dist""
+    value: ""200m"""
+3,38,Search for all hiking trails no more than 1.2km from a national park in Vancouver.,"area:
+  - type: ""area""
+  - value: ""Vancouver""
+nodes:
+  - id: 1
+    name: ""hiking trail""
+  - id: 2
+    name: ""national park""
+edges:
+  - id: 1
+    source: 1
+    target: 2
+    type: ""dist""
+    value: ""1.2km"""
+3,95,Find all restaurants no farther than 450m from an art gallery in San Francisco.,"area:
+  - type: ""area""
+  - value: ""San Francisco""
+nodes:
+  - id: 1
+    name: ""restaurant""
+  - id: 2
+    name: ""art gallery""
+edges:
+  - id: 1
+    source: 1
+    target: 2
+    type: ""dist""
+    value: ""450m"""
+3,68,Find all bookstores no farther than 800m from a cafe in Portland.,"area:
+  - type: ""area""
+  - value: ""Portland""
+nodes:
+  - id: 1
+    name: ""bookstore""
+  - id: 2
+    name: ""cafe""
+edges:
+  - id: 1
+    source: 1
+    target: 2
+    type: ""dist""
+    value: ""800m"""
+3,76,Pinpoint every meditation center less than 550m from a spa in Bali.,"area:
+  - type: ""area""
+  - value: ""Bali""
+nodes:
+  - id: 1
+    name: ""meditation center""
+  - id: 2
+    name: ""spa""
+edges:
+  - id: 1
+    source: 1
+    target: 2
+    type: ""dist""
+    value: ""550m"""
+3,66,Identify all dog parks within 350m of a pet store in San Diego.,"area:
+  - type: ""area""
+  - value: ""San Diego""
+nodes:
+  - id: 1
+    name: ""dog park""
+  - id: 2
+    name: ""pet store""
+edges:
+  - id: 1
+    source: 1
+    target: 2
+    type: ""dist""
+    value: ""350m"""
+3,52,Discover every stationery store less than 200m away from a university in Oxford.,"area:
+  - type: ""area""
+  - value: ""Oxford""
+nodes:
+  - id: 1
+    name: ""stationery store""
+  - id: 2
+    name: ""university""
+edges:
+  - id: 1
+    source: 1
+    target: 2
+    type: ""dist""
+    value: ""200m"""
+3,30,Identify all pet shops within 700m of a vet clinic in Dublin.,"area:
+  - type: ""area""
+  - value: ""Dublin""
+nodes:
+  - id: 1
+    name: ""pet shop""
+  - id: 2
+    name: ""vet clinic""
+edges:
+  - id: 1
+    source: 1
+    target: 2
+    type: ""dist""
+    value: ""700m"""
+3,90,Reveal all gourmet burger joints less than 500m from a craft brewery in Denver.,"area:
+  - type: ""area""
+  - value: ""Denver""
+nodes:
+  - id: 1
+    name: ""gourmet burger joint""
+  - id: 2
+    name: ""craft brewery""
+edges:
+  - id: 1
+    source: 1
+    target: 2
+    type: ""dist""
+    value: ""500m"""
+3,60,Map out tailors within 250m of a fashion school in Paris.,"area:
+  - type: ""area""
+  - value: ""Paris""
+nodes:
+  - id: 1
+    name: ""tailor""
+  - id: 2
+    name: ""fashion school""
+edges:
+  - id: 1
+    source: 1
+    target: 2
+    type: ""dist""
+    value: ""250m"""
+3,64,Track all bars within 450m of a hotel in New York.,"area:
+  - type: ""area""
+  - value: ""New York""
+nodes:
+  - id: 1
+    name: ""bar""
+  - id: 2
+    name: ""hotel""
+edges:
+  - id: 1
+    source: 1
+    target: 2
+    type: ""dist""
+    value: ""450m"""
+3,69,Map out barbershops within 550m of a men's clothing store in Milan.,"area:
+  - type: ""area""
+  - value: ""Milan""
+nodes:
+  - id: 1
+    name: ""barbershop""
+  - id: 2
+    name: ""men's clothing store""
+edges:
+  - id: 1
+    source: 1
+    target: 2
+    type: ""dist""
+    value: ""550m"""
+3,91,Track all climbing gyms within 250m of a sports store in Boulder.,"area:
+  - type: ""area""
+  - value: ""Boulder""
+nodes:
+  - id: 1
+    name: ""climbing gym""
+  - id: 2
+    name: ""sports store""
+edges:
+  - id: 1
+    source: 1
+    target: 2
+    type: ""dist""
+    value: ""250m"""
+3,101,Locate tattoo studios within 350m of a music venue in Nashville.,"area:
+  - type: ""area""
+  - value: ""Nashville""
+nodes:
+  - id: 1
+    name: ""tattoo studio""
+  - id: 2
+    name: ""music venue""
+edges:
+  - id: 1
+    source: 1
+    target: 2
+    type: ""dist""
+    value: ""350m"""
+3,85,Pinpoint every cocktail bar less than 700m from a dance club in Miami.,"area:
+  - type: ""area""
+  - value: ""Miami""
+nodes:
+  - id: 1
+    name: ""cocktail bar""
+  - id: 2
+    name: ""dance club""
+edges:
+  - id: 1
+    source: 1
+    target: 2
+    type: ""dist""
+    value: ""700m"""
+3,89,Locate all record stores within 750m of a music school in Nashville.,"area:
+  - type: ""area""
+  - value: ""Nashville""
+nodes:
+  - id: 1
+    name: ""record store""
+  - id: 2
+    name: ""music school""
+edges:
+  - id: 1
+    source: 1
+    target: 2
+    type: ""dist""
+    value: ""750m"""
+3,88,Discover every specialty tea shop less than 300m away from a bakery in London.,"area:
+  - type: ""area""
+  - value: ""London""
+nodes:
+  - id: 1
+    name: ""specialty tea shop""
+  - id: 2
+    name: ""bakery""
+edges:
+  - id: 1
+    source: 1
+    target: 2
+    type: ""dist""
+    value: ""300m"""
+3,16,Discover every post office within 750m of a clinic in Amsterdam.,"area:
+  - type: ""area""
+  - value: ""Amsterdam""
+nodes:
+  - id: 1
+    name: ""post office""
+  - id: 2
+    name: ""clinic""
+edges:
+  - id: 1
+    source: 1
+    target: 2
+    type: ""dist""
+    value: ""750m"""
+3,86,Find all shops no farther than 400m from a jewelry store in Geneva.,"area:
+  - type: ""area""
+  - value: ""Geneva""
+nodes:
+  - id: 1
+    name: ""shop""
+  - id: 2
+    name: ""jewelry store""
+edges:
+  - id: 1
+    source: 1
+    target: 2
+    type: ""dist""
+    value: ""400m"""
+3,17,Reveal all bicycle rental spots less than 1km from a zoo in Barcelona.,"area:
+  - type: ""area""
+  - value: ""Barcelona""
+nodes:
+  - id: 1
+    name: ""bicycle rental spot""
+  - id: 2
+    name: ""zoo""
+edges:
+  - id: 1
+    source: 1
+    target: 2
+    type: ""dist""
+    value: ""1km"""
+3,51,Map out thrift stores within 300m of a college in Berkeley.,"area:
+  - type: ""area""
+  - value: ""Berkeley""
+nodes:
+  - id: 1
+    name: ""thrift store""
+  - id: 2
+    name: ""college""
+edges:
+  - id: 1
+    source: 1
+    target: 2
+    type: ""dist""
+    value: ""300m"""
+3,73,Track all gourmet chocolate shops within 500m of a patisserie in Brussels.,"area:
+  - type: ""area""
+  - value: ""Brussels""
+nodes:
+  - id: 1
+    name: ""gourmet chocolate shop""
+  - id: 2
+    name: ""patisserie""
+edges:
+  - id: 1
+    source: 1
+    target: 2
+    type: ""dist""
+    value: ""500m"""
+3,25,Discover all boutiques less than 300m away from an art gallery in Vienna.,"area:
+  - type: ""area""
+  - value: ""Vienna""
+nodes:
+  - id: 1
+    name: ""boutique""
+  - id: 2
+    name: ""art gallery""
+edges:
+  - id: 1
+    source: 1
+    target: 2
+    type: ""dist""
+    value: ""300m"""
+3,58,Pinpoint every hotel less than 450m from a historic site in Edinburgh.,"area:
+  - type: ""area""
+  - value: ""Edinburgh""
+nodes:
+  - id: 1
+    name: ""hotel""
+  - id: 2
+    name: ""historic site""
+edges:
+  - id: 1
+    source: 1
+    target: 2
+    type: ""dist""
+    value: ""450m"""
+3,75,Identify all pottery studios within 400m of an art supply store in Copenhagen.,"area:
+  - type: ""area""
+  - value: ""Copenhagen""
+nodes:
+  - id: 1
+    name: ""pottery studio""
+  - id: 2
+    name: ""art supply store""
+edges:
+  - id: 1
+    source: 1
+    target: 2
+    type: ""dist""
+    value: ""400m"""
+3,50,Find all wine shops no farther than 400m from a vineyard in Bordeaux.,"area:
+  - type: ""area""
+  - value: ""Bordeaux""
+nodes:
+  - id: 1
+    name: ""wine shop""
+  - id: 2
+    name: ""vineyard""
+edges:
+  - id: 1
+    source: 1
+    target: 2
+    type: ""dist""
+    value: ""400m"""
+3,18,Locate playgrounds within 200m of a stadium in Chicago.,"area:
+  - type: ""area""
+  - value: ""Chicago""
+nodes:
+  - id: 1
+    name: ""playground""
+  - id: 2
+    name: ""stadium""
+edges:
+  - id: 1
+    source: 1
+    target: 2
+    type: ""dist""
+    value: ""200m"""
+3,100,Track all ice cream parlors within 700m of a park in Barcelona.,"area:
+  - type: ""area""
+  - value: ""Barcelona""
+nodes:
+  - id: 1
+    name: ""ice cream parlor""
+  - id: 2
+    name: ""park""
+edges:
+  - id: 1
+    source: 1
+    target: 2
+    type: ""dist""
+    value: ""700m"""
+3,82,Track all boutique gyms within 600m of a wellness center in Los Angeles.,"area:
+  - type: ""area""
+  - value: ""Los Angeles""
+nodes:
+  - id: 1
+    name: ""boutique gym""
+  - id: 2
+    name: ""wellness center""
+edges:
+  - id: 1
+    source: 1
+    target: 2
+    type: ""dist""
+    value: ""600m"""
+3,13,Search for libraries no farther than 250m from a lake in Zurich.,"area:
+  - type: ""area""
+  - value: ""Zurich""
+nodes:
+  - id: 1
+    name: ""library""
+  - id: 2
+    name: ""lake""
+edges:
+  - id: 1
+    source: 1
+    target: 2
+    type: ""dist""
+    value: ""250m"""
+3,9,Track all playgrounds not more than 800m from a beach in Miami.,"area:
+  - type: ""area""
+  - value: ""Miami""
+nodes:
+  - id: 1
+    name: ""playground""
+  - id: 2
+    name: ""beach""
+edges:
+  - id: 1
+    source: 1
+    target: 2
+    type: ""dist""
+    value: ""800m"""
+3,97,Discover every antique bookstore less than 600m away from a coffee shop in Vienna.,"area:
+  - type: ""area""
+  - value: ""Vienna""
+nodes:
+  - id: 1
+    name: ""antique bookstore""
+  - id: 2
+    name: ""coffee shop""
+edges:
+  - id: 1
+    source: 1
+    target: 2
+    type: ""dist""
+    value: ""600m"""
+3,2,Identify all gas stations less than 1km from a police station in Paris.,"area:
+  - type: ""area""
+  - value: ""Paris""
+nodes:
+  - id: 1
+    name: ""gas station""
+  - id: 2
+    name: ""police station""
+edges:
+  - id: 1
+    source: 1
+    target: 2
+    type: ""dist""
+    value: ""1km"""
+3,72,Reveal all florists less than 200m from a wedding venue in Florence.,"area:
+  - type: ""area""
+  - value: ""Florence""
+nodes:
+  - id: 1
+    name: ""florist""
+  - id: 2
+    name: ""wedding venue""
+edges:
+  - id: 1
+    source: 1
+    target: 2
+    type: ""dist""
+    value: ""200m"""
+3,98,Locate all fashion shops within 1km of a fashion college in New York.,"area:
+  - type: ""area""
+  - value: ""New York""
+nodes:
+  - id: 1
+    name: ""fashion shop""
+  - id: 2
+    name: ""fashion college""
+edges:
+  - id: 1
+    source: 1
+    target: 2
+    type: ""dist""
+    value: ""1km"""
+3,34,Discover every electronics store less than 350m away from a tech hub in Austin.,"area:
+  - type: ""area""
+  - value: ""Austin""
+nodes:
+  - id: 1
+    name: ""electronics store""
+  - id: 2
+    name: ""tech hub""
+edges:
+  - id: 1
+    source: 1
+    target: 2
+    type: ""dist""
+    value: ""350m"""
+3,84,Identify all specialty spice shops within 500m of a cooking school in Marrakech.,"area:
+  - type: ""area""
+  - value: ""Marrakech""
+nodes:
+  - id: 1
+    name: ""specialty spice shop""
+  - id: 2
+    name: ""cooking school""
+edges:
+  - id: 1
+    source: 1
+    target: 2
+    type: ""dist""
+    value: ""500m"""
+3,59,Find all skate parks no farther than 500m from a youth center in Los Angeles.,"area:
+  - type: ""area""
+  - value: ""Los Angeles""
+nodes:
+  - id: 1
+    name: ""skate park""
+  - id: 2
+    name: ""youth center""
+edges:
+  - id: 1
+    source: 1
+    target: 2
+    type: ""dist""
+    value: ""500m"""
+3,43,Discover all record stores less than 550m away from a music venue in Liverpool.,"area:
+  - type: ""area""
+  - value: ""Liverpool""
+nodes:
+  - id: 1
+    name: ""record store""
+  - id: 2
+    name: ""music venue""
+edges:
+  - id: 1
+    source: 1
+    target: 2
+    type: ""dist""
+    value: ""550m"""
+3,96,Map out shoe stores within 300m of a fashion designer studio in Paris.,"area:
+  - type: ""area""
+  - value: ""Paris""
+nodes:
+  - id: 1
+    name: ""shoe store""
+  - id: 2
+    name: ""fashion designer studio""
+edges:
+  - id: 1
+    source: 1
+    target: 2
+    type: ""dist""
+    value: ""300m"""
+3,57,Identify all tea houses within 350m of a botanical garden in Hangzhou.,"area:
+  - type: ""area""
+  - value: ""Hangzhou""
+nodes:
+  - id: 1
+    name: ""tea house""
+  - id: 2
+    name: ""botanical garden""
+edges:
+  - id: 1
+    source: 1
+    target: 2
+    type: ""dist""
+    value: ""350m"""
+3,70,Discover speciality cheese shop less than 300m away from a wine bar in Paris.,"area:
+  - type: ""area""
+  - value: ""Paris""
+nodes:
+  - id: 1
+    name: ""specialty cheese shop""
+  - id: 2
+    name: ""wine bar""
+edges:
+  - id: 1
+    source: 1
+    target: 2
+    type: ""dist""
+    value: ""300m"""
+3,42,Map out delis within 250m of a brewery in Munich.,"area:
+  - type: ""area""
+  - value: ""Munich""
+nodes:
+  - id: 1
+    name: ""deli""
+  - id: 2
+    name: ""brewery""
+edges:
+  - id: 1
+    source: 1
+    target: 2
+    type: ""dist""
+    value: ""250m"""
+3,22,Pinpoint all eateries less than 800m from a university in Toronto.,"area:
+  - type: ""area""
+  - value: ""Toronto""
+nodes:
+  - id: 1
+    name: ""eatery""
+  - id: 2
+    name: ""university""
+edges:
+  - id: 1
+    source: 1
+    target: 2
+    type: ""dist""
+    value: ""800m"""
+3,74,Search for all indie music stores no more than 650m from a live music bar in Austin.,"area:
+  - type: ""area""
+  - value: ""Austin""
+nodes:
+  - id: 1
+    name: ""indie music store""
+  - id: 2
+    name: ""live music bar""
+edges:
+  - id: 1
+    source: 1
+    target: 2
+    type: ""dist""
+    value: ""650m"""
+3,53,Locate all nightclubs within 650m of a concert hall in Ibiza.,"area:
+  - type: ""area""
+  - value: ""Ibiza""
+nodes:
+  - id: 1
+    name: ""nightclub""
+  - id: 2
+    name: ""concert hall""
+edges:
+  - id: 1
+    source: 1
+    target: 2
+    type: ""dist""
+    value: ""650m"""
+3,1,Locate every school within 500m of a hospital in Seattle.,"area:
+  - type: ""area""
+  - value: ""Seattle""
+nodes:
+  - id: 1
+    name: ""school""
+  - id: 2
+    name: ""hospital""
+edges:
+  - id: 1
+    source: 1
+    target: 2
+    type: ""dist""
+    value: ""500m"""
+3,3,Find all parks no farther than 300m from a river in London.,"area:
+  - type: ""area""
+  - value: ""London""
+nodes:
+  - id: 1
+    name: ""parks""
+  - id: 2
+    name: ""river""
+edges:
+  - id: 1
+    source: 1
+    target: 2
+    type: ""dist""
+    value: ""300m"""
+3,94,Pinpoint every museum less than 800m from a cultural center in Athens.,"area:
+  - type: ""area""
+  - value: ""Athens""
+nodes:
+  - id: 1
+    name: ""museum""
+  - id: 2
+    name: ""cultural center""
+edges:
+  - id: 1
+    source: 1
+    target: 2
+    type: ""dist""
+    value: ""800m"""
+3,31,Pinpoint every hair salon less than 250m from a spa in Helsinki.,"area:
+  - type: ""area""
+  - value: ""Helsinki""
+nodes:
+  - id: 1
+    name: ""hair salon""
+  - id: 2
+    name: ""spa""
+edges:
+  - id: 1
+    source: 1
+    target: 2
+    type: ""dist""
+    value: ""250m"""
+3,63,Reveal all coffee shops less than 1km from a university in Melbourne.,"area:
+  - type: ""area""
+  - value: ""Melbourne""
+nodes:
+  - id: 1
+    name: ""coffee shop""
+  - id: 2
+    name: ""university""
+edges:
+  - id: 1
+    source: 1
+    target: 2
+    type: ""dist""
+    value: ""1km"""
+3,81,Reveal all bakeries less than 250m from a health food store in Portland.,"area:
+  - type: ""area""
+  - value: ""Portland""
+nodes:
+  - id: 1
+    name: ""bakery""
+  - id: 2
+    name: ""health food store""
+edges:
+  - id: 1
+    source: 1
+    target: 2
+    type: ""dist""
+    value: ""250m"""
+3,56,Search for all farmers markets no more than 700m from an organic farm in Tuscany.,"area:
+  - type: ""area""
+  - value: ""Tuscany""
+nodes:
+  - id: 1
+    name: ""farmers market""
+  - id: 2
+    name: ""farm""
+    filters:
+      key: ""organic""
+      operator: ""=""
+      value: ""yes""
+edges:
+  - id: 1
+    source: 1
+    target: 2
+    type: ""dist""
+    value: ""700m"""
+3,55,Track all pubs within 550m of a brewery in Portland.,"area:
+  - type: ""area""
+  - value: ""Portland""
+nodes:
+  - id: 1
+    name: ""pub""
+  - id: 2
+    name: ""brewery""
+edges:
+  - id: 1
+    source: 1
+    target: 2
+    type: ""dist""
+    value: ""550m"""
+3,79,Discover every boutique eyewear shop less than 450m away from a fashion boutique in New York.,"area:
+  - type: ""area""
+  - value: ""New York""
+nodes:
+  - id: 1
+    name: ""boutique eyewear shop""
+  - id: 2
+    name: ""fashion boutique""
+edges:
+  - id: 1
+    source: 1
+    target: 2
+    type: ""dist""
+    value: ""450m"""
+3,77,Find all water sports centers no farther than 300m from a beach in Miami.,"area:
+  - type: ""area""
+  - value: ""Miami""
+nodes:
+  - id: 1
+    name: ""water sports center""
+  - id: 2
+    name: ""beach""
+edges:
+  - id: 1
+    source: 1
+    target: 2
+    type: ""dist""
+    value: ""300m"""
+3,44,Locate every health food store within 800m of a gym in Boulder.,"area:
+  - type: ""area""
+  - value: ""Boulder""
+nodes:
+  - id: 1
+    name: ""health food store""
+  - id: 2
+    name: ""gym""
+edges:
+  - id: 1
+    source: 1
+    target: 2
+    type: ""dist""
+    value: ""800m""
+"
+3,80,Locate all ars within 800m of a brewery in Dublin.,"area:
+  - type: ""area""
+  - value: ""Dublin""
+nodes:
+  - id: 1
+    name: ""bar""
+  - id: 2
+    name: ""brewery""
+edges:
+  - id: 1
+    source: 1
+    target: 2
+    type: ""dist""
+    value: ""800m"""
+3,45,Reveal all seafood restaurants less than 450m from a fishing harbor in Halifax.,"area:
+  - type: ""area""
+  - value: ""Halifax""
+nodes:
+  - id: 1
+    name: ""seafood restaurant""
+  - id: 2
+    name: ""fishing harbor""
+edges:
+  - id: 1
+    source: 1
+    target: 2
+    type: ""dist""
+    value: ""450m"""
+3,61,Discover every book store less than 300m away from a cafe in Seattle.,"area:
+  - type: ""area""
+  - value: ""Seattle""
+nodes:
+  - id: 1
+    name: ""book store""
+  - id: 2
+    name: ""cafe""
+edges:
+  - id: 1
+    source: 1
+    target: 2
+    type: ""dist""
+    value: ""300m"""
+3,14,Map out hostels within 450m of a metro station in Moscow.,"area:
+  - type: ""area""
+  - value: ""Moscow""
+nodes:
+  - id: 1
+    name: ""hostel""
+  - id: 2
+    name: ""metro station""
+edges:
+  - id: 1
+    source: 1
+    target: 2
+    type: ""dist""
+    value: ""450m""
+"
+3,92,Search for all clubs no more than 650m from a music conservatory in New Orleans.,"area:
+  - type: ""area""
+  - value: ""New Orleans""
+nodes:
+  - id: 1
+    name: ""club""
+  - id: 2
+    name: ""music conservatory""
+edges:
+  - id: 1
+    source: 1
+    target: 2
+    type: ""dist""
+    value: ""650m"""
+3,28,Track bars within 600m of a conference center in Seoul.,"area:
+  - type: ""area""
+  - value: ""Seoul""
+nodes:
+  - id: 1
+    name: ""bar""
+  - id: 2
+    name: ""conference center""
+edges:
+  - id: 1
+    source: 1
+    target: 2
+    type: ""dist""
+    value: ""600m"""
+3,11,Identify all bridges less than 1.5km from a fire station in San Francisco.,"area:
+  - type: ""area""
+  - value: ""San Francisco""
+nodes:
+  - id: 1
+    name: ""bridge""
+  - id: 2
+    name: ""fire station""
+edges:
+  - id: 1
+    source: 1
+    target: 2
+    type: ""dist""
+    value: ""1.5km"""
+3,19,Track all restaurants no more than 600m from a gym in Portland.,"area:
+  - type: ""area""
+  - value: ""Portland""
+nodes:
+  - id: 1
+    name: ""restaurant""
+  - id: 2
+    name: ""gym""
+edges:
+  - id: 1
+    source: 1
+    target: 2
+    type: ""dist""
+    value: ""600m"""
+3,35,Locate all vintage clothing stores within 900m of a museum in New Orleans.,"area:
+  - type: ""area""
+  - value: ""New Orleans""
+nodes:
+  - id: 1
+    name: ""vintage clothing store""
+  - id: 2
+    name: ""museum""
+edges:
+  - id: 1
+    source: 1
+    target: 2
+    type: ""dist""
+    value: ""900m"""
+3,54,Reveal all sushi bars less than 800m from a fish market in Tokyo.,"area:
+  - type: ""area""
+  - value: ""Tokyo""
+nodes:
+  - id: 1
+    name: ""sushi bar""
+  - id: 2
+    name: ""fish market""
+edges:
+  - id: 1
+    source: 1
+    target: 2
+    type: ""dist""
+    value: ""800m"""
+3,47,Search for all bicycle paths no more than 600m from a park in Amsterdam.,"area:
+  - type: ""area""
+  - value: ""Amsterdam""
+nodes:
+  - id: 1
+    name: ""bicycle path""
+  - id: 2
+    name: ""park""
+edges:
+  - id: 1
+    source: 1
+    target: 2
+    type: ""dist""
+    value: ""600m"""
+3,41,Find all concert venues no farther than 700m from a bar in Nashville.,"area:
+  - type: ""area""
+  - value: ""Nashville""
+nodes:
+  - id: 1
+    name: ""concert venue""
+  - id: 2
+    name: ""bar""
+edges:
+  - id: 1
+    source: 1
+    target: 2
+    type: ""dist""
+    value: ""700m"""
+3,23,Find carparks no farther than 500m from a botanical garden in Singapore.,"area:
+  - type: ""area""
+  - value: ""Singapore""
+nodes:
+  - id: 1
+    name: ""carpark""
+  - id: 2
+    name: ""botanical garden""
+edges:
+  - id: 1
+    source: 1
+    target: 2
+    type: ""dist""
+    value: ""500m"""
+3,48,Identify all jewelers within 500m of a hotel in Monaco.,"area:
+  - type: ""area""
+  - value: ""Monaco""
+nodes:
+  - id: 1
+    name: ""jeweler""
+  - id: 2
+    name: ""hotel""
+edges:
+  - id: 1
+    source: 1
+    target: 2
+    type: ""dist""
+    value: ""500m"""
+3,33,Map out cafes within 550m of a bookstore in Melbourne.,"area:
+  - type: ""area""
+  - value: ""Melbourne""
+nodes:
+  - id: 1
+    name: ""cafe""
+  - id: 2
+    name: ""bookstore""
+edges:
+  - id: 1
+    source: 1
+    target: 2
+    type: ""dist""
+    value: ""550m"""
+3,83,Search for all  film theaters no more than 350m from an bookstore in San Francisco.,"area:
+  - type: ""area""
+  - value: ""San Francisco""
+nodes:
+  - id: 1
+    name: ""film theater""
+  - id: 2
+    name: ""bookstore""
+edges:
+  - id: 1
+    source: 1
+    target: 2
+    type: ""dist""
+    value: ""350m"""
+3,20,Search for all historic monuments within 300m of a riverbank in Prague.,"area:
+  - type: ""area""
+  - value: ""Prague""
+nodes:
+  - id: 1
+    name: ""historic monument""
+  - id: 2
+    name: ""riverbank""
+edges:
+  - id: 1
+    source: 1
+    target: 2
+    type: ""dist""
+    value: ""300m"""
+3,5,Search for all coffee shops less than 200m away from a museum in New York.,"area:
+  - type: ""area""
+  - value: ""New York""
+nodes:
+  - id: 1
+    name: ""coffee shop""
+  - id: 2
+    name: ""museum""
+edges:
+  - id: 1
+    source: 1
+    target: 2
+    type: ""dist""
+    value: ""200m"""
+3,24,Map out hotels within 350m of a railway station in Brussels.,"area:
+  - type: ""area""
+  - value: ""Brussels""
+nodes:
+  - id: 1
+    name: ""hotel""
+  - id: 2
+    name: ""railway station""
+edges:
+  - id: 1
+    source: 1
+    target: 2
+    type: ""dist""
+    value: ""350m"""
+3,99,Reveal all street art locations less than 550m from a modern art museum in Berlin.,"area:
+  - type: ""area""
+  - value: ""Berlin""
+nodes:
+  - id: 1
+    name: ""street art location""
+  - id: 2
+    name: ""modern art museum""
+edges:
+  - id: 1
+    source: 1
+    target: 2
+    type: ""dist""
+    value: ""550m"""
+3,87,Map out fashion boutiques within 550m of a hotel in Milan.,"area:
+  - type: ""area""
+  - value: ""Milan""
+nodes:
+  - id: 1
+    name: ""fashion boutique""
+  - id: 2
+    name: ""hotel""
+edges:
+  - id: 1
+    source: 1
+    target: 2
+    type: ""dist""
+    value: ""550m"""
+3,49,Pinpoint every art studio less than 750m from an art college in Savannah.,"area:
+  - type: ""area""
+  - value: ""Savannah""
+nodes:
+  - id: 1
+    name: ""art studio""
+  - id: 2
+    name: ""art college""
+edges:
+  - id: 1
+    source: 1
+    target: 2
+    type: ""dist""
+    value: ""750m"""
+3,29,Search for all tattoo parlors no more than 450m from a library in Buenos Aires.,"area:
+  - type: ""area""
+  - value: ""Buenos Aires""
+nodes:
+  - id: 1
+    name: ""tattoo parlor""
+  - id: 2
+    name: ""library""
+edges:
+  - id: 1
+    source: 1
+    target: 2
+    type: ""dist""
+    value: ""450m"""
+3,12,Pinpoint every gym within a 700m radius of a cinema in Los Angeles.,"area:
+  - type: ""area""
+  - value: ""Los Angeles""
+nodes:
+  - id: 1
+    name: ""gym""
+  - id: 2
+    name: ""cinema""
+edges:
+  - id: 1
+    source: 1
+    target: 2
+    type: ""dist""
+    value: ""700m"""
+3,46,Track all fabric stores within 350m of a tailor in Milan.,"area:
+  - type: ""area""
+  - value: ""Milan""
+nodes:
+  - id: 1
+    name: ""fabric store""
+  - id: 2
+    name: ""tailor""
+edges:
+  - id: 1
+    source: 1
+    target: 2
+    type: ""dist""
+    value: ""350m"""
+3,93,Identify all stores within 350m of a spa in Sedona.,"area:
+  - type: ""area""
+  - value: ""Sedona""
+nodes:
+  - id: 1
+    name: ""store""
+  - id: 2
+    name: ""spa""
+edges:
+  - id: 1
+    source: 1
+    target: 2
+    type: ""dist""
+    value: ""350m"""
+3,26,Locate every bakery within 1km of a school in Manchester.,"area:
+  - type: ""area""
+  - value: ""Manchester""
+nodes:
+  - id: 1
+    name: ""bakery""
+  - id: 2
+    name: ""school""
+edges:
+  - id: 1
+    source: 1
+    target: 2
+    type: ""dist""
+    value: ""1km"""
+3,32,Find all fishing spots no farther than 800m from a campground in Oslo.,"area:
+  - type: ""area""
+  - value: ""Oslo""
+nodes:
+  - id: 1
+    name: ""fishing spot""
+  - id: 2
+    name: ""campground""
+edges:
+  - id: 1
+    source: 1
+    target: 2
+    type: ""dist""
+    value: ""800m"""
+3,6,Discover every bank within 600m of a university in Boston.,"area:
+  - type: ""area""
+  - value: ""Boston""
+nodes:
+  - id: 1
+    name: ""bank""
+  - id: 2
+    name: ""university""
+edges:
+  - id: 1
+    source: 1
+    target: 2
+    type: ""dist""
+    value: ""600m"""
