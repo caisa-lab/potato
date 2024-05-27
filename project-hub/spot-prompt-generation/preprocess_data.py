@@ -18,7 +18,7 @@ if __name__ == '__main__':
     with open(input_file) as f:
         lines = f.readlines()
         if sample < len(lines):
-            lines = lines[sample:]
+            lines = lines[:sample]
 
     with open(output_file, "w") as outfile:
         for idx, line in enumerate(lines):

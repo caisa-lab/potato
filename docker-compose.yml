@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  app:
+    image: potato:latest  # Replace with your actual Docker image name
+    build:
+      context: .  # This assumes your Dockerfile is in the same directory as your docker-compose.yml
+      dockerfile: Dockerfile  # This assumes your Dockerfile is named 'Dockerfile'
+    command: ["python", "potato/flask_server.py", "start", "project-hub/spot-prompt-generation/configs/task_config.yaml", "-p", "8080"]
+    ports:
+      - "8080:8080"
+    environment:
+      - PYTHONPATH=/app
+    volumes:
+      - .:/app

@@ -148,3 +148,18 @@ Please use the following bibtex when referencing this work:
   year={2022}
 }
 ```
+
+
+## Setup for the ReCo Annotations
+
+We use a dockerized image.
+
+docker build -t potato:latest .
+
+### Spot Prompt Generation
+
+Preprocess the files:
+
+```shell
+python -m preprocess_data --input-file $INPUT_FILE --output-file $OUTPUT_FILE 
+```
