@@ -1,4 +1,4 @@
-version: '3.8'
+version: '2'
 
 services:
   app:
@@ -10,7 +10,8 @@ services:
     ports:
       - "8080:8080"
     environment:
-      - PYTHONPATH=/app
+      PYTHONPATH: /app
+      http_proxy: ""
     volumes:
       - .:/app
       - ./project-hub:/app/task
