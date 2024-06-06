@@ -1,4 +1,6 @@
-# 🥔Potato: the POrtable Text Annotation TOol
+# 🥔Potato: the POrtable Text Annotation TOol (behing an nginx reserve proxy)
+
+!! Add a `.htpasswd` file to the root directory like so: `htpasswd -c .htpasswd username`
  
 [📖Documentation](https://potato-annotation.readthedocs.io/) | [🍎Feature hightlights](#Feature-hightlights)  |  [🛫️Quick Start](#Quick-Start) | [🌰Example projects (project hub)](#Example-projects-project-hub) | [🔥Design Team and Support](#Design-Team-and-Support) | [💰License](#License) | [🍞Cite us](#Cite-us)
 
