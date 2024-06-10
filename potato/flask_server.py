@@ -612,7 +612,7 @@ def load_all_data(config):
                     instance_id_to_data[instance_id] = item
 
         else:
-            sep = "," if fmt == "csv" else "\t"
+            sep = ";" if fmt == "csv" else "\t"
             # Ensure the key is loaded as a string form (prevents weirdness
             # later)
             df = pd.read_csv(data_fname, sep=sep, dtype={id_key: str, text_key: str})
