@@ -1,156 +1,199 @@
 id;text
 doc_1;"Please use the following data to write a prompt for finding a location with SPOT.
 
+
 The objects you are looking for are:
  - bus stop
  - car shop, with floors: 2 and brand:  ""Master Farma""
  - aqueduct
 
+
+
 The area you are searching in is:
  - Please don't specify a search area.
+
+
 
 In your search the objects have the following relations to each other:
  - The car shop is next to the bus stop
  - The aqueduct is approximately 1.2 kilometers from the car shop
 
+
+
 The overall style of your prompt should be:
  - Short and precise, multiple sentences.
+
+
 
 Additional instructions:
  - None
 "
 doc_3;"Please use the following data to write a prompt for finding a location with SPOT.
 
+
 The objects you are looking for are:
  - give way sign
  - space airport
 
+
 The area you are searching in is:
- - Coste?tii din Vale, D�mbovi?a County, Romania
+ - Costeştii din Vale, Dâmbovița County, Romania
 
 In your search the objects have the following relations to each other:
  - All objects are in a radius of 60 km.
 
+
 The overall style of your prompt should be:
  - Simple language, all in one sentence.
  - Containing a few typos.
+
 
 Additional instructions:
  - None
 "
 doc_4;"Please use the following data to write a prompt for finding a location with SPOT.
 
+
 The objects you are looking for are:
  - gym, with house number: 21
  - houseboat
  - correctional facility
 
+
 The area you are searching in is:
  - Please don't specify a search area.
+
 
 In your search the objects have the following relations to each other:
  - The gym is inside the houseboat
  - The correctional facility is more or less 1 kilometer from the houseboat
 
+
 The overall style of your prompt should be:
  - Elaborate wording, multiple sentences.
+
 
 Additional instructions:
  - None
 "
 doc_5;"Please use the following data to write a prompt for finding a location with SPOT.
 
+
 The objects you are looking for are:
  - Australian Football Field
  - public outdoor grill
  - power plant
 
+
 The area you are searching in is:
  - Perth
+
 
 In your search the objects have the following relations to each other:
  - The public outdoor grill is inside the Australian Football Field
  - The power plant is approximately 2 km from the Australian Football Field
 
+
 The overall style of your prompt should be:
  - Short and precise, all in one sentence.
+
 
 Additional instructions:
  - None
 "
 doc_6;"Please use the following data to write a prompt for finding a location with SPOT.
 
+
 The objects you are looking for are:
  - street lamp
  - emergency telephone
 
+
 The area you are searching in is:
  - Kornwestheim, Baden-W�rttemberg, Germany
+
 
 In your search the objects have the following relations to each other:
  - All objects are 400 meters from each other.
 
+
 The overall style of your prompt should be:
  - Simple language, multiple sentences.
+
 
 Additional instructions:
  - None
 "
 doc_7;"Please use the following data to write a prompt for finding a location with SPOT.
 
+
 The objects you are looking for are:
  - outdoor fitness
  - sports shop
  - high-speed train tracks
 
+
 The area you are searching in is:
  - Anjouan, Comoros
+
 
 In your search the objects have the following relations to each other:
  - The sports shop is inside the outdoor fitness
  - The high-speed train tracks are less than a thousand, three hundred feet from the sports shop
 
+
 The overall style of your prompt should be:
  - Short and precise, all in one sentence.
  - Containing many typos.
+
 
 Additional instructions:
  - None
 "
 doc_10;"Please use the following data to write a prompt for finding a location with SPOT.
 
+
 The objects you are looking for are:
  - military range
  - rental shop
  - city limit sign
 
+
 The area you are searching in is:
  - Austin, Texas
+
 
 In your search the objects have the following relations to each other:
  - The military range is more or less 3 miles from the rental shop
  - The rental shop is no more than 70 meters from the city limit sign
 
+
 The overall style of your prompt should be:
  - Elaborate wording, multiple sentences.
+
 
 Additional instructions:
  - None"
 doc_11;"Please use the following data to write a prompt for finding a location with SPOT.
 
+
 The objects you are looking for are:
  - speed camera
  - dovecote
 
+
 The area you are searching in is:
  - Old Kilcullen
+
 
 In your search the objects have the following relations to each other:
  - All objects are within 2 kilometers.
 
+
 The overall style of your prompt should be:
  - Short and precise, multiple sentences.
  - Containing a few grammar mistakes.
+
 
 Additional instructions:
  - Please treat Object 2 as a cluster of 3 of this Object when writing the prompt (similar to ""three houses"" instead of ""house"").
@@ -158,41 +201,817 @@ Additional instructions:
 "
 doc_12;"Please use the following data to write a prompt for finding a location with SPOT.
 
+
 The objects you are looking for are:
  - hotel, with building number: 76
  - second hand shop
  - storage rental
 
+
 The area you are searching in is:
- - La B�gude-de-Mazenc
+ - La Bégude-de-Mazenc
+
 
 In your search the objects have the following relations to each other:
  - The second hand shop is inside the hotel
  - The storage rental is at max eight hundred yards from the second hand shop
 
+
 The overall style of your prompt should be:
  - Simple language, multiple sentences.
  - Containing many grammar mistakes.
+
 
 Additional instructions:
  - None
 "
 doc_13;"Please use the following data to write a prompt for finding a location with SPOT.
 
+
 The objects you are looking for are:
  - seaport
  - lift gate
  - overhead crane
 
+
 The area you are searching in is:
  - Please don't specify a search area.
+
 
 In your search the objects have the following relations to each other:
  - The lift gate is in the seaport
  - The overhead crane is in the seaport
 
+
 The overall style of your prompt should be:
  - Elaborate wording, multiple sentences.
+
+
+Additional instructions:
+ - None
+"
+doc_15;"Please use the following data to write a prompt for finding a location with SPOT.
+
+
+The objects you are looking for are:
+ - high-rise apartments, with house number: 384/A
+ - pergola, building material: brick and height: smaller than 2 m
+ - charging base
+
+
+The area you are searching in is:
+ - Al Adl, Makkah, Saudi Arabia
+
+
+In your search the objects have the following relations to each other:
+ - the high-rise apartments are 50 m from the pergola
+ - The charging base is in the high-rise apartments
+
+
+The overall style of your prompt should be:
+ - Simple language, all in one sentence.
+
+
+Additional instructions:
+ - None
+"
+doc_18;"Please use the following data to write a prompt for finding a location with SPOT.
+
+
+The objects you are looking for are:
+ - softball field
+ - dual carriageway, with secondary road
+
+
+The area you are searching in is:
+ - Lark Hill
+
+
+In your search the objects have the following relations to each other:
+ - All objects are no more than 400 miles from another.
+
+
+The overall style of your prompt should be:
+ - Short and precise, all in one sentence.
+
+
+Additional instructions:
+ - None
+"
+doc_19;"Please use the following data to write a prompt for finding a location with SPOT.
+
+
+The objects you are looking for are:
+ - power cable
+ - travel agency
+ - atm
+
+
+The area you are searching in is:
+ - Carcedo de Burgos, Spain
+
+
+In your search the objects have the following relations to each other:
+ - The power cable is 200 meters away from the travel agency
+ - The travel agency is less than 60 meters away from the atm
+
+
+The overall style of your prompt should be:
+ - Elaborate wording, all in one sentence.
+
+
+Additional instructions:
+ - Please treat Object 1 as a cluster of 2 of this Object when writing the prompt (similar to ""three houses"" instead of ""house"").
+"
+doc_20;"Please use the following data to write a prompt for finding a location with SPOT.
+
+
+The objects you are looking for are:
+ - TV studio
+
+
+The area you are searching in is:
+ - Hilversum, Netherlands
+
+
+In your search the objects have the following relations to each other:
+ - None
+
+
+The overall style of your prompt should be:
+ - Short and precise.
+
+
+Additional instructions:
+ - None
+"
+doc_22;"Please use the following data to write a prompt for finding a location with SPOT.
+
+
+The objects you are looking for are:
+ - speed camera
+ - antenna
+
+
+The area you are searching in is:
+ - Paraíba
+
+
+In your search the objects have the following relations to each other:
+ - All objects are 100 m from each other.
+
+
+The overall style of your prompt should be:
+ - Elaborate wording, all in one sentence.
+ - Containing many grammar mistakes.
+ - Containing many typos.
+
+
+Additional instructions:
+ - None
+"
+doc_23;"Please use the following data to write a prompt for finding a location with SPOT.
+
+
+The objects you are looking for are:
+ - scientific research institute
+ - elephant path
+
+
+The area you are searching in is:
+ - Thailand 
+
+
+In your search the objects have the following relations to each other:
+ - All objects are within 150 m
+
+
+The overall style of your prompt should be:
+ - Elaborate wording, all in one sentence.
+ - Containing many grammar mistakes.
+
+
+Additional instructions:
+ - None
+"
+doc_24;"Please use the following data to write a prompt for finding a location with SPOT.
+
+
+The objects you are looking for are:
+ - restaurant, with parking spots and name:  ""Burger King""
+ - mural
+
+
+The area you are searching in is:
+ - Laborde, C�rdoba, Argentina
+
+
+In your search the objects have the following relations to each other:
+ - The mural is about 300 yards away from the restaurant
+
+
+The overall style of your prompt should be:
+ - Short and precise, all in one sentence.
+ - Containing a few typos.
+
+
+Additional instructions:
+ - None
+"
+doc_25;"Please use the following data to write a prompt for finding a location with SPOT.
+
+
+The objects you are looking for are:
+ - muezzin
+ - tram station, with moving sidewalk
+ - war memorial
+
+
+The area you are searching in is:
+ - Queensland, Australia
+
+
+In your search the objects have the following relations to each other:
+ - The tram station is inside the muezzin
+ - The war memorial is inside the muezzin
+
+
+The overall style of your prompt should be:
+ - Short and precise, all in one sentence.
+ - Containing a few typos.
+
+
+Additional instructions:
+ - When writing the prompt, please make sure you use Uyghur letters for the the area name. We suggest using an AI translation tool to transform the it into the respective writing.
+"
+doc_26;"Please use the following data to write a prompt for finding a location with SPOT.
+
+
+The objects you are looking for are:
+ - motorcycle repair shop
+
+
+The area you are searching in is:
+ - Saitama Prefecture, Japan
+
+
+In your search the objects have the following relations to each other:
+ - None
+
+
+The overall style of your prompt should be:
+ - Simple language, all in one sentence.
+
+
+Additional instructions:
+ - None
+"
+doc_27;"Please use the following data to write a prompt for finding a location with SPOT.
+
+
+The objects you are looking for are:
+ - office building, with floors: lower than 10
+ - vacant shop
+ - gambling den
+
+
+The area you are searching in is:
+ - Please don't specify a search area.
+
+
+In your search the objects have the following relations to each other:
+ - The vacant shop is within the office building
+ - The gambling den is 0.5 miles from the vacant shop
+
+
+The overall style of your prompt should be:
+ - Elaborate wording, multiple sentences.
+
+
+Additional instructions:
+ - None
+"
+doc_28;"Please use the following data to write a prompt for finding a location with SPOT.
+
+
+The objects you are looking for are:
+ - bow shooting
+ - bowling green
+
+
+The area you are searching in is:
+ - Antônio Prado, Brazil
+
+
+In your search the objects have the following relations to each other:
+ - All objects are no more than fifty-two thousand meters from another.
+
+
+The overall style of your prompt should be:
+ - Short and precise, all in one sentence.
+
+
+Additional instructions:
+ - None
+"
+doc_29;"Please use the following data to write a prompt for finding a location with SPOT.
+
+
+The objects you are looking for are:
+ - elementary school, with religion: shinto
+ - roundabout, with accessible parking space
+ - cluster house
+
+
+The area you are searching in is:
+ - Milverton, United Kingdom
+
+
+In your search the objects have the following relations to each other:
+ - The elementary school is around 1 kilometer away from the roundabout
+ - The roundabout is 10 m from the apartment building
+
+
+The overall style of your prompt should be:
+ - Elaborate wording, multiple sentences.
+ - Containing many typos.
+
+
+Additional instructions:
+ - None
+"
+doc_30;"Please use the following data to write a prompt for finding a location with SPOT.
+
+
+The objects you are looking for are:
+ - tourist attraction
+ - brand: Tommy Hilfiger
+ - football stadium
+
+
+The area you are searching in is:
+ - Leisure World, United States
+
+
+In your search the objects have the following relations to each other:
+ - The brand: Tommy Hilfiger is within the tourist attraction
+ - The football stadium is no more than 200 m from the brand: Tommy Hilfiger
+
+
+The overall style of your prompt should be:
+ - Simple language, multiple sentences.
+
+
+Additional instructions:
+ - None
+"
+doc_31;"Please use the following data to write a prompt for finding a location with SPOT.
+
+
+The objects you are looking for are:
+ - christian church
+ - fire tower
+ - houseboat
+
+
+The area you are searching in is:
+ - City of Norfolk, Virginia, United States
+
+
+In your search the objects have the following relations to each other:
+ - The christian church is five hundred yards from the fire tower
+ - The fire tower is no more than 850 yards away from the houseboat
+
+
+The overall style of your prompt should be:
+ - Short and precise, multiple sentences.
+ - Containing many typos.
+
+
+Additional instructions:
+ - None
+"
+doc_33;"Please use the following data to write a prompt for finding a location with SPOT.
+
+
+The objects you are looking for are:
+ - trench
+
+
+The area you are searching in is:
+ - Vrancea County
+
+
+In your search the objects have the following relations to each other:
+ - None
+
+
+The overall style of your prompt should be:
+ - Simple language.
+
+
+Additional instructions:
+ - None
+"
+doc_34;"Please use the following data to write a prompt for finding a location with SPOT.
+
+
+The objects you are looking for are:
+ - social facility, with building levels: lower than 3 and name: begins with the letters ""ole""
+ - petrol station
+ - fabric shop
+
+
+The area you are searching in is:
+ - D�mbovi?a County, Romania
+
+
+In your search the objects have the following relations to each other:
+ - The petrol station is 400 meters away from the social facility
+ - The fabric shop is 300 m from the petrol station
+
+
+The overall style of your prompt should be:
+ - Simple language, multiple sentences.
+ - Containing many typos.
+
+
+Additional instructions:
+ - None
+"
+doc_35;"Please use the following data to write a prompt for finding a location with SPOT.
+
+
+The objects you are looking for are:
+ - automobile
+ - embassy
+ - fire exit
+
+
+The area you are searching in is:
+ - Lervik
+
+
+In your search the objects have the following relations to each other:
+ - The automobile is at max one hundred meters from the embassy
+ - The fire exit is within in the embassy 
+The overall style of your prompt should be:
+ - Elaborate wording, all in one sentence.
+
+
+Additional instructions:
+ - None
+"
+doc_36;"Please use the following data to write a prompt for finding a location with SPOT.
+
+
+The objects you are looking for are:
+ - refugee center
+ - alcohol shop
+
+
+The area you are searching in is:
+ - Jackson, South Carolina, United States
+
+
+In your search the objects have the following relations to each other:
+ - The alcohol shop is contained in the refugee center
+
+
+The overall style of your prompt should be:
+ - Elaborate wording, all in one sentence.
+
+
+Additional instructions:
+ - None
+"
+doc_38;"Please use the following data to write a prompt for finding a location with SPOT.
+
+
+The objects you are looking for are:
+ - scientific research institute
+ - brand: ATM MANDIRI
+ - japanese gate
+
+
+The area you are searching in is:
+ - Please don't specify a search area.
+
+
+In your search the objects have the following relations to each other:
+ - The scientific research institute is at least 50 m away from the brand: ATM MANDIRI
+ - The brand: ATM MANDIRI is 9 m away from the japanese gate
+
+
+The overall style of your prompt should be:
+ - Short and precise, all in one sentence.
+
+
+Additional instructions:
+ - None
+"
+doc_39;"Please use the following data to write a prompt for finding a location with SPOT.
+
+
+The objects you are looking for are:
+ - fire hose
+ - gas station
+
+
+The area you are searching in is:
+ - Bavaria
+
+
+In your search the objects have the following relations to each other:
+ - All objects are in a radius of 150 meters.
+
+
+The overall style of your prompt should be:
+ - Short and precise, all in one sentence.
+ - Containing a few typos.
+
+
+Additional instructions:
+ - When writing the prompt, please make sure you use Hebrew letters for the the area name. We suggest using a translation tool to transform it into the respective writing.
+"
+doc_41;"Please use the following data to write a prompt for finding a location with SPOT.
+
+
+The objects you are looking for are:
+ - campsite
+ - hostel
+ - brand: Lodge & Glamping
+
+
+The area you are searching in is:
+ - Ban Hoang, Vietnam
+
+
+In your search the objects have the following relations to each other:
+ - The hostel is contained in the campsite
+
+
+The overall style of your prompt should be:
+ - Short and precise, all in one sentence.
+
+
+Additional instructions:
+ - When writing the prompt, please make sure you use Vietnamese letters for the brand. We suggest using a translation tool to transform it into the respective writing.
+"
+doc_42;"Please use the following data to write a prompt for finding a location with SPOT.
+
+
+The objects you are looking for are:
+ - side chapel
+
+
+The area you are searching in is:
+ - Vilnius, Vilnius City Municipality, Lithuania
+
+
+In your search the objects have the following relations to each other:
+ - None
+ 
+
+The overall style of your prompt should be:
+ - Elaborate wording.
+ - Containing a few grammar mistakes.
+
+
+Additional instructions:
+ - Please treat Object 1 as a cluster of 3 of this Object when writing the prompt (similar to ""three houses"" instead of ""house"").
+"
+doc_43;"Please use the following data to write a prompt for finding a location with SPOT.
+
+
+The objects you are looking for are:
+ - industrial area
+ - wind turbine
+ - cooling tower, with brand name:  ""Los Maitenes"" and observation tower and height: under 30 yards
+
+
+The area you are searching in is:
+ - New South Wales, Australia
+
+
+In your search the objects have the following relations to each other:
+ - The wind turbine is within the industrial area
+ - The cooling tower is within the industrial area
+
+
+The overall style of your prompt should be:
+ - Short and precise, multiple sentences.
+
+
+Additional instructions:
+ - Please treat Object 2 as a cluster of 6 of this Object when writing the prompt (similar to ""three houses"" instead of ""house"").
+"
+doc_44;"Please use the following data to write a prompt for finding a location with SPOT.
+
+
+The objects you are looking for are:
+ - artwork
+ - music venue
+ - library
+
+
+The area you are searching in is:
+ - Bay Harbor
+
+
+In your search the objects have the following relations to each other:
+ - Use this term to describe the spatial relation between the artwork and the music venue: in close distance to
+ - The music venue is no less than 0.5 miles away from the study
+
+
+The overall style of your prompt should be:
+ - Elaborate wording, multiple sentences.
+
+
+Additional instructions:
+ - None
+"
+doc_45;"Please use the following data to write a prompt for finding a location with SPOT.
+
+The objects you are looking for are:
+ - dune
+ - lighthouse
+ - beach hut
+
+The area you are searching in is:
+ - Hesse
+
+In your search the objects have the following relations to each other:
+ - The lighthouse is contained in the dune
+ - The tailor is more or less 160 m away from the lighthouse
+
+The overall style of your prompt should be:
+ - Elaborate wording, all in one sentence.
+
+Additional instructions:
+ - None
+"
+doc_46;"Please use the following data to write a prompt for finding a location with SPOT.
+
+
+The objects you are looking for are:
+ - dune
+ - lighthouse
+ - beach hut
+
+
+The area you are searching in is:
+ - Hesse
+
+
+In your search the objects have the following relations to each other:
+ - The lighthouse is contained in the dune
+ - The tailor is more or less 160 m away from the lighthouse
+
+
+The overall style of your prompt should be:
+ - Elaborate wording, all in one sentence.
+
+
+Additional instructions:
+ - None
+"
+doc_47;"Please use the following data to write a prompt for finding a location with SPOT.
+
+
+The objects you are looking for are:
+ - embankment
+
+
+The area you are searching in is:
+ - Ryazan Oblast
+
+
+In your search the objects have the following relations to each other:
+ - None
+
+
+The overall style of your prompt should be:
+ - Elaborate wording, all in one sentence.
+
+
+Additional instructions:
+ - None
+"
+doc_48;"Please use the following data to write a prompt for finding a location with SPOT.
+
+
+The objects you are looking for are:
+ - forestry office
+
+
+The area you are searching in is:
+ - Buz?u County, Romania
+
+
+In your search the objects have the following relations to each other:
+ - None
+
+
+The overall style of your prompt should be:
+ - Simple language, all in one sentence.
+
+
+Additional instructions:
+ - None
+"
+doc_49;"Please use the following data to write a prompt for finding a location with SPOT.
+
+
+The objects you are looking for are:
+ - antiquities shop
+
+
+The area you are searching in is:
+ - Ash Shuhadā’, Monufia, Egypt
+
+
+In your search the objects have the following relations to each other:
+ - None
+
+
+The overall style of your prompt should be:
+ - Short and precise, multiple sentences.
+
+
+Additional instructions:
+ - None
+"
+doc_51;"Please use the following data to write a prompt for finding a location with SPOT.
+
+
+The objects you are looking for are:
+ - wastewater plant
+
+
+The area you are searching in is:
+ - Powiat kolski, Poland
+
+
+In your search the objects have the following relations to each other:
+ - None
+
+
+The overall style of your prompt should be:
+ - Elaborate wording, all in one sentence.
+ - Containing a few grammar mistakes.
+ - Containing a few typos.
+
+
+Additional instructions:
+ - None
+"
+doc_52;"Please use the following data to write a prompt for finding a location with SPOT.
+
+
+The objects you are looking for are:
+ - basketball field
+ - destination sign
+ - garden center
+
+
+The area you are searching in is:
+ - Please don't specify a search area.
+
+
+In your search the objects have the following relations to each other:
+ - The destination sign is within the basketball field
+ - The garden center is two hundred m from the destination sign
+
+
+The overall style of your prompt should be:
+ - Simple language, multiple sentences.
+ - Containing a few grammar mistakes.
+
+
+Additional instructions:
+ - None
+"
+doc_55;"Please use the following data to write a prompt for finding a location with SPOT.
+
+
+The objects you are looking for are:
+ - disc golf course
+ - soccer field
+
+
+The area you are searching in is:
+ - North Rhine-Westphalia
+
+
+In your search the objects have the following relations to each other:
+ - All objects are within two hundred miles.
+
+
+The overall style of your prompt should be:
+ - Elaborate wording, multiple sentences.
+ - Containing many grammar mistakes.
+
 
 Additional instructions:
  - None

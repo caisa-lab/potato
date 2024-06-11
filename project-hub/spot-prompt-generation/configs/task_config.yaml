@@ -58,10 +58,10 @@
             # if you want to use multi-line textbox, turn on the text area and set the desired rows and cols of the textbox
             "textarea": {
               "on": True,
-              "rows": 40,
+              "rows": 10,
               "cols": 70
             },
-            "allow_paste": True
+            "allow_paste": False
         } ,
     ],
 
