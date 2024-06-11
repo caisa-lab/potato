@@ -616,7 +616,7 @@ def load_all_data(config):
             # Ensure the key is loaded as a string form (prevents weirdness
             # later)
             df = pd.read_csv(data_fname, sep=sep, dtype={id_key: str, text_key: str})
-            print(df)
+            df[text_key] = df[text_key].apply(lambda x: x.replace('\n', '<br />'))
             for _, row in df.iterrows():
 
                 item = {}
