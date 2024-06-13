@@ -16,14 +16,14 @@
     # * csv
     # * tsv
     #
-    "output_annotation_format": "csv",
+    "output_annotation_format": "json",
 
     # If annotators are using a codebook, this will be linked at the top to the
     # instance for easy access
 #    "annotation_codebook_url": "https://docs.google.com/document/d/1OoJ3Ew_ga2GfXbG6WqQidaFMGvCL4Sm8pPQ4UJ4JgIY/edit?usp=sharing",
 
     "data_files": [
-          "data/small_data.csv"
+          "data/potatoe_instructions_v2-4.json"
     ],
 
     "item_properties": {
@@ -70,7 +70,7 @@
       "on": True,
       #"order" : ['pre_annotation', 'prestudy_passed', 'prestudy_failed', 'post_annotation'],
       "order" : ['pre_annotation', 'post_annotation'],
-      "pre_annotation": ['surveyflow/instruction.jsonl', 'surveyflow/consent.jsonl','surveyflow/demographic_questions.jsonl','surveyflow/intro.jsonl'],
+      "pre_annotation": ['surveyflow/instruction.jsonl', 'surveyflow/consent.jsonl', 'surveyflow/intro.jsonl'],
       "post_annotation": ['surveyflow/end.jsonl'],
       # If set, we will automatically generate testing questions similar to the annotation instances, but explicitly ask the annotator to choose one option
       # "testing": ['surveyflow/testing.jsonl'],
